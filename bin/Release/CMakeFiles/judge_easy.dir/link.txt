@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++11 -O3 -DNDEBUG   CMakeFiles/judge_easy.dir/judges/judge.cpp.o CMakeFiles/judge_easy.dir/Tree.cpp.o CMakeFiles/judge_easy.dir/Forest.cpp.o  -o judge_easy 

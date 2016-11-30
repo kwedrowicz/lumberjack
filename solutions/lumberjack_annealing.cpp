@@ -321,33 +321,49 @@ int main()
     }
     srand( time( NULL ) );
     calculate_cut_value();
+    generateSolution();
     while(true){
-        generateSolution();
-        for(int a = 1; a < MAXPOWER; a++){
-            localChange();
-            if(!lastSolution || currentSolution->value > lastSolution->value)
-                lastSolution = currentSolution;
+        localChange();
+        if(!lastSolution || currentSolution->value > lastSolution->value)
+            lastSolution = currentSolution;
+        else{
+            //double ck = pow(delta, a)*c0;
+            double bound = 0.7;
+            double past_time = float( clock () - begin_time ) /  CLOCKS_PER_SEC;
+            double full_time;
+            double divider;
+            if(k <= 100)
+                full_time = TIME1;
+            else if(k <= 1000)
+                full_time = TIME2;
+            else
+                full_time = TIME3;
+            double ck;
+            double part = past_time/full_time;
+            if(part < bound){
+                // y = 1,4286x + 1
+                divider = 1.4286*part+1;
+            }
             else{
-                double ck = pow(delta, a)*c0;
-                if((lastSolution->value-currentSolution->value)*100/ck < (rand() % 100)){
-                    lastSolution = currentSolution;
-                }
+                // y = 26,667x - 16,667
+                divider = 26.667*part-16.667;
             }
-            if(
-                    (k <= 100 && float( clock () - begin_time ) /  CLOCKS_PER_SEC > TIME1) ||
-                    (k <= 1000 && float( clock () - begin_time ) /  CLOCKS_PER_SEC > TIME2) ||
-                    (k <= 10000 && float( clock () - begin_time ) /  CLOCKS_PER_SEC > TIME3)
-                    ){
-                print_result();
-                return 0;
-            }
-            if(!bestSolution || currentSolution->value > bestSolution->value){
-                bestSolution = currentSolution;
+            double prob = pow(M_E, (currentSolution->value/(double)lastSolution->value)/divider) - 1;
+            if(prob*100 > (rand() % 100)){
+                lastSolution = currentSolution;
             }
         }
-
+        if(
+                (k <= 100 && float( clock () - begin_time ) /  CLOCKS_PER_SEC > TIME1) ||
+                (k <= 1000 && float( clock () - begin_time ) /  CLOCKS_PER_SEC > TIME2) ||
+                (k <= 10000 && float( clock () - begin_time ) /  CLOCKS_PER_SEC > TIME3)
+                ){
+            print_result();
+            return 0;
+        }
+        if(!bestSolution || currentSolution->value > bestSolution->value){
+            bestSolution = currentSolution;
+        }
     }
-    print_result();
-    return 0;
 }
 

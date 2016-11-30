@@ -1,0 +1,8 @@
+/home/krzysztof/ClionProjects/Lumberjack/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/krzysztof/ClionProjects/Lumberjack/cmake-build-debug/CMakeFiles/annealing_2.dir
+/home/krzysztof/ClionProjects/Lumberjack/cmake-build-debug/CMakeFiles/greedy_cpu.dir
+/home/krzysztof/ClionProjects/Lumberjack/cmake-build-debug/CMakeFiles/krzysiek_ant.dir
+/home/krzysztof/ClionProjects/Lumberjack/cmake-build-debug/CMakeFiles/maciej_ant.dir
+/home/krzysztof/ClionProjects/Lumberjack/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/krzysztof/ClionProjects/Lumberjack/cmake-build-debug/CMakeFiles/solution_annealing.dir
+/home/krzysztof/ClionProjects/Lumberjack/cmake-build-debug/CMakeFiles/judge_easy.dir

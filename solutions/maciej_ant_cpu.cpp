@@ -1,10 +1,6 @@
 #include <iostream>
-#include <fstream>
-#include <istream>
-#include <string>
 #include <vector>
 #include <cmath>
-#include <cstdlib>
 #include <ctime>
 #include <algorithm>
 
@@ -494,7 +490,7 @@ int main(int argc, char** argv)
 
             if(
                     (treeCount <= 100 && float( clock () - begin_time ) /  CLOCKS_PER_SEC > TIME1) ||
-                    (treeCount <= 1000 && float( clock () - begin_time ) /  CLOCKS_PER_SEC > TIME3) ||
+                    (treeCount <= 1000 && float( clock () - begin_time ) /  CLOCKS_PER_SEC > TIME2) ||
                     (treeCount <= 10000 && float( clock () - begin_time ) /  CLOCKS_PER_SEC > TIME3)
             ){
                 print_result();

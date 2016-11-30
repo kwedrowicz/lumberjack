@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++11 -O3 -DNDEBUG   CMakeFiles/maciej_ant.dir/solutions/maciej_ant_cpu.cpp.o  -o maciej_ant 

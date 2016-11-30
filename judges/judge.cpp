@@ -100,7 +100,7 @@ int readdata()
                             res += newTree->getValue();
                             tree = newTree;
                             current_height = tree->height;
-                            //printf("FALL %d %d\n", tx, ty);
+                            forest->removeTree(tx,ty);
                         }
                         else
                             break;
