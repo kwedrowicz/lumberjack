@@ -302,11 +302,10 @@ void localChange(){
     while(current_ant.t > 0){
         possible_choose.clear();
         size = current_ant.cutted.size();
-        r = rand() % (size-1) + 1;
         for(int i = 1; i <= treeCount; i++){
             if(!cutted[i]){
                 consume_time = trees[i].d;
-                consume_time += calculate_distance(i, current_ant.cutted[r-1]);
+                consume_time += calculate_distance(i, current_ant.cutted[r]);
                 if(r < size-1)
                     consume_time += calculate_distance(i, current_ant.cutted[r+1]);
                 if(consume_time <= current_ant.t){
@@ -316,9 +315,10 @@ void localChange(){
         }
         if(possible_choose.size() > 0){
             chooose_rand = int(rand() % possible_choose.size());
-            current_ant.cutted.insert(current_ant.cutted.begin()+r, possible_choose[chooose_rand]);
+            current_ant.cutted.insert(current_ant.cutted.begin()+r+1, possible_choose[chooose_rand]);
             direction = (int)distance(cut_value[possible_choose[chooose_rand]], max_element(cut_value[possible_choose[chooose_rand]], cut_value[possible_choose[chooose_rand]]+4));
-            current_ant.directions.insert(current_ant.directions.begin()+r, direction);
+            current_ant.directions.insert(current_ant.directions.begin()+r+1, direction);
+            r++;
         }
         else
             break;
@@ -339,7 +339,7 @@ int main(int argc, char** argv)
     while(true)
     {
         localChange();
-        cout << best_ant.res<<" "<<current_ant.res <<"\n";
+        //cout << best_ant.res<<" "<<current_ant.res <<"\n";
         if(current_ant.res > last_ant.res)
             last_ant = current_ant;
         else{
