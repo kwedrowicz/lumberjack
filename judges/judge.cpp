@@ -50,6 +50,11 @@ int readdata()
         resScanner->skipWhitespacesUntilEOLN();
         resScanner->readEofOrEoln();
         if(kind == "move"){
+            if (!t)
+            {
+                printf("-1|Could not perform another move - not enough time\n");
+                exit(0);
+            }
             if(direction == "up")
                 py++;
             else if(direction == "down")
@@ -59,12 +64,23 @@ int readdata()
             else if(direction == "right")
                 px++;
             else
-                ierror(5);
-            if(px < 0 || py < 0 || px >= forest->getSize() || py >= forest->getSize()) ierror(6);
+            {
+                printf("-1|%s is incorrect direction\n", direction.c_str());
+                exit(0);
+            }
+            if(px < 0 || py < 0 || px >= forest->getSize() || py >= forest->getSize())
+            {
+                printf("-1|Target position %d,%d is outside grid of size %d\n", px, py, forest->getSize()); 
+                exit(0);
+            }
             t--;
         }
         else if(kind == "cut"){
-            if(!forest->isTree(px,py)) ierror(7);
+            if(!forest->isTree(px,py))
+            {
+                printf("-1|Cutting tree on position where there is no tree\n");
+                exit(0);
+            }
             Tree * tree = new Tree(*forest->getTree(px,py));
 
             if(tree->width <= t){
@@ -84,7 +100,10 @@ int readdata()
                 else if(direction == "right")
                     dx = 1;
                 else
-                    ierror(8);
+                {
+                    printf("-1|%s is incorrect direction\n", direction.c_str());
+                    exit(0);
+                }
                 int tx = px+dx;
                 int ty = py+dy;
                 current_height--;
@@ -111,11 +130,14 @@ int readdata()
                 }
             }
             else
-                ierror(9);
+            {
+                printf("-1|Not enought time to cut the tree\n");
+                exit(0);
+            }
         }
         else {
-            cout << "KIND: "<< kind <<endl;
-            ierror(10);
+            printf("-1|%s is incorrect action\n", kind.c_str());
+            exit(0);
         }
     }
     return res;
