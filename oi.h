@@ -235,8 +235,8 @@ namespace oi {
     }
 
     void endDefault(const char* msg, int line, int position) {
-        printf("ERROR(line: %d, position: %d): %s\n", line, position, msg);
-        exit(1);
+        printf("-1|Unexpected token (line: %d, pos: %d): %s\n", line, position, msg);
+        exit(0);
     }
 
 // ------------------------------- Random -------------------------------------
