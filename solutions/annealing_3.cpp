@@ -178,7 +178,7 @@ struct solution{
         cout <<"\n";*/
 
         for(int i = 1; i <= treeCount; i++){
-            int cost = calculate_distance(order[i-1], order[i])+trees[i].d;
+            int cost = calculate_distance(order[i-1], order[i])+trees[order[i]].d;
             if(cost <= timeLeft && !cutted[order[i]]){
                 result += cutTree(order[i], direction[i]);
                 timeLeft -= cost;

@@ -102,7 +102,7 @@ struct solution{
     int lastPosition;
     int result = 0;
     int timeLeft;
-    solution(){
+    void init(){
         for(int i = 0; i <= treeCount; i++){
             order[i] = i;
             direction[i] = (int)distance(cut_value[i], max_element(cut_value[i], cut_value[i]+4));
@@ -172,14 +172,8 @@ struct solution{
     int calculateResult(){
         prepare();
 
-        /*cout <<"TIME: "<<timeLeft<<"\n";
-        for(int i = 0; i <= treeCount; i++){
-            cout << order[i] <<" ";
-        }
-        cout <<"\n";*/
-
         for(int i = 1; i <= treeCount; i++){
-            int cost = calculate_distance(order[i-1], order[i])+trees[i].d;
+            int cost = calculate_distance(order[i-1], order[i])+trees[order[i]].d;
             if(cost <= timeLeft && !cutted[order[i]]){
                 result += cutTree(order[i], direction[i]);
                 timeLeft -= cost;
@@ -239,6 +233,7 @@ struct solution{
         swap(direction[rand1], direction[rand2]);
     }
     void printResult(){
+
         timeLeft = timeLimit;
         for(int i = 1; i <= lastPosition; i++)
         {
@@ -323,13 +318,14 @@ int main(int argc, char** argv)
     trees[0] = {0,0,0,0,0,0}; // create fake tree on starting point
     srand( time( NULL ) );
     calculate_cut_values();
-    bestSolution = solution();
+    bestSolution.init();
     bestSolution.createFirstSolution();
     bestSolution.calculateResult();
 
     solution currentSolution, oldSolution, bestCurrentSolution;
 
     oldSolution = bestSolution;
+
     vector<int> hash_key;
 
     while(true)
@@ -354,6 +350,7 @@ int main(int argc, char** argv)
             if(first_occurence)
                 tabu_insert(hash_key);
         }
+
         if(bestCurrentSolution.result > 0)
             oldSolution = bestCurrentSolution;
         if(bestSolution.result < bestCurrentSolution.result){
