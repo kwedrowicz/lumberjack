@@ -91,9 +91,9 @@ int cutTree(int i, int direction)
         y += dy;
         if(x < 0 || y < 0 || x >= mapSize || y >= mapSize)
             break;
-        if(forest[x][y] > 0)
+        if(forest[x][y] > 0 && !cutted[forest[x][y]])
         {
-            if(!cutted[forest[x][y]] && tree_weight(cur_tree) > tree_weight(forest[x][y]))
+            if(tree_weight(cur_tree) > tree_weight(forest[x][y]))
             {
                 sum += tree_value(forest[x][y]);
                 height = trees[forest[x][y]].h;
@@ -150,7 +150,6 @@ void calculate_cut_values()
                         sum += tree_value(forest[x][y]);
                         height = trees[forest[x][y]].h;
                         cur_tree = forest[x][y];
-                        cutted[forest[x][y]] = true;
                     }
                     else
                         break;
@@ -177,6 +176,9 @@ void loadFromStream(istream &stream) {
 }
 
 void print_result(){
+    /*for(int i = 1; i < best_ant.cutted.size(); i++){
+        cout << best_ant.cutted[i] <<" ";
+    }*/
     for(int i = 1; i < best_ant.cutted.size(); i++)
     {
         int horizontal = trees[best_ant.cutted[i]].x-trees[best_ant.cutted[i-1]].x;

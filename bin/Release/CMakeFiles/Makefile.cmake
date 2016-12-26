@@ -44,10 +44,14 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/annealing_2.dir/DependInfo.cmake"
-  "CMakeFiles/greedy_cpu.dir/DependInfo.cmake"
-  "CMakeFiles/krzysiek_ant.dir/DependInfo.cmake"
+  "CMakeFiles/judge_easy.dir/DependInfo.cmake"
+  "CMakeFiles/greedy_cpu_2.dir/DependInfo.cmake"
   "CMakeFiles/maciej_ant.dir/DependInfo.cmake"
   "CMakeFiles/solution_annealing.dir/DependInfo.cmake"
-  "CMakeFiles/judge_easy.dir/DependInfo.cmake"
+  "CMakeFiles/krzysiek_ant.dir/DependInfo.cmake"
+  "CMakeFiles/greedy_cpu.dir/DependInfo.cmake"
+  "CMakeFiles/greedy_cpu_3.dir/DependInfo.cmake"
+  "CMakeFiles/annealing_2.dir/DependInfo.cmake"
+  "CMakeFiles/annealing_3.dir/DependInfo.cmake"
+  "CMakeFiles/tabu_search.dir/DependInfo.cmake"
   )

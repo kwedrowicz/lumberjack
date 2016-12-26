@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/krzysztof/ClionProjects/Lumberjack/solutions/greedy_cpu_3.cpp
+iostream
+-
+vector
+-
+ctime
+-
+algorithm
+-
+

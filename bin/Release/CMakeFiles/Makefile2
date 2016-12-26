@@ -60,6 +60,265 @@ CMAKE_SOURCE_DIR = /home/krzysztof/ClionProjects/Lumberjack
 CMAKE_BINARY_DIR = /home/krzysztof/ClionProjects/Lumberjack/bin/Release
 
 #=============================================================================
+# Target rules for target CMakeFiles/judge_easy.dir
+
+# All Build rule for target.
+CMakeFiles/judge_easy.dir/all:
+	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/depend
+	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=11,12,13,14 "Built target judge_easy"
+.PHONY : CMakeFiles/judge_easy.dir/all
+
+# Include target in all.
+all: CMakeFiles/judge_easy.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/judge_easy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/judge_easy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 0
+.PHONY : CMakeFiles/judge_easy.dir/rule
+
+# Convenience name for target.
+judge_easy: CMakeFiles/judge_easy.dir/rule
+
+.PHONY : judge_easy
+
+# clean rule for target.
+CMakeFiles/judge_easy.dir/clean:
+	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/clean
+.PHONY : CMakeFiles/judge_easy.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/judge_easy.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/greedy_cpu_2.dir
+
+# All Build rule for target.
+CMakeFiles/greedy_cpu_2.dir/all:
+	$(MAKE) -f CMakeFiles/greedy_cpu_2.dir/build.make CMakeFiles/greedy_cpu_2.dir/depend
+	$(MAKE) -f CMakeFiles/greedy_cpu_2.dir/build.make CMakeFiles/greedy_cpu_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=7,8 "Built target greedy_cpu_2"
+.PHONY : CMakeFiles/greedy_cpu_2.dir/all
+
+# Include target in all.
+all: CMakeFiles/greedy_cpu_2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/greedy_cpu_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/greedy_cpu_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 0
+.PHONY : CMakeFiles/greedy_cpu_2.dir/rule
+
+# Convenience name for target.
+greedy_cpu_2: CMakeFiles/greedy_cpu_2.dir/rule
+
+.PHONY : greedy_cpu_2
+
+# clean rule for target.
+CMakeFiles/greedy_cpu_2.dir/clean:
+	$(MAKE) -f CMakeFiles/greedy_cpu_2.dir/build.make CMakeFiles/greedy_cpu_2.dir/clean
+.PHONY : CMakeFiles/greedy_cpu_2.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/greedy_cpu_2.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/maciej_ant.dir
+
+# All Build rule for target.
+CMakeFiles/maciej_ant.dir/all:
+	$(MAKE) -f CMakeFiles/maciej_ant.dir/build.make CMakeFiles/maciej_ant.dir/depend
+	$(MAKE) -f CMakeFiles/maciej_ant.dir/build.make CMakeFiles/maciej_ant.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=17,18 "Built target maciej_ant"
+.PHONY : CMakeFiles/maciej_ant.dir/all
+
+# Include target in all.
+all: CMakeFiles/maciej_ant.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/maciej_ant.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/maciej_ant.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 0
+.PHONY : CMakeFiles/maciej_ant.dir/rule
+
+# Convenience name for target.
+maciej_ant: CMakeFiles/maciej_ant.dir/rule
+
+.PHONY : maciej_ant
+
+# clean rule for target.
+CMakeFiles/maciej_ant.dir/clean:
+	$(MAKE) -f CMakeFiles/maciej_ant.dir/build.make CMakeFiles/maciej_ant.dir/clean
+.PHONY : CMakeFiles/maciej_ant.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/maciej_ant.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/solution_annealing.dir
+
+# All Build rule for target.
+CMakeFiles/solution_annealing.dir/all:
+	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/depend
+	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=19,20,21,22,23 "Built target solution_annealing"
+.PHONY : CMakeFiles/solution_annealing.dir/all
+
+# Include target in all.
+all: CMakeFiles/solution_annealing.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/solution_annealing.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/solution_annealing.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 0
+.PHONY : CMakeFiles/solution_annealing.dir/rule
+
+# Convenience name for target.
+solution_annealing: CMakeFiles/solution_annealing.dir/rule
+
+.PHONY : solution_annealing
+
+# clean rule for target.
+CMakeFiles/solution_annealing.dir/clean:
+	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/clean
+.PHONY : CMakeFiles/solution_annealing.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/solution_annealing.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/krzysiek_ant.dir
+
+# All Build rule for target.
+CMakeFiles/krzysiek_ant.dir/all:
+	$(MAKE) -f CMakeFiles/krzysiek_ant.dir/build.make CMakeFiles/krzysiek_ant.dir/depend
+	$(MAKE) -f CMakeFiles/krzysiek_ant.dir/build.make CMakeFiles/krzysiek_ant.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=15,16 "Built target krzysiek_ant"
+.PHONY : CMakeFiles/krzysiek_ant.dir/all
+
+# Include target in all.
+all: CMakeFiles/krzysiek_ant.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/krzysiek_ant.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/krzysiek_ant.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 0
+.PHONY : CMakeFiles/krzysiek_ant.dir/rule
+
+# Convenience name for target.
+krzysiek_ant: CMakeFiles/krzysiek_ant.dir/rule
+
+.PHONY : krzysiek_ant
+
+# clean rule for target.
+CMakeFiles/krzysiek_ant.dir/clean:
+	$(MAKE) -f CMakeFiles/krzysiek_ant.dir/build.make CMakeFiles/krzysiek_ant.dir/clean
+.PHONY : CMakeFiles/krzysiek_ant.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/krzysiek_ant.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/greedy_cpu.dir
+
+# All Build rule for target.
+CMakeFiles/greedy_cpu.dir/all:
+	$(MAKE) -f CMakeFiles/greedy_cpu.dir/build.make CMakeFiles/greedy_cpu.dir/depend
+	$(MAKE) -f CMakeFiles/greedy_cpu.dir/build.make CMakeFiles/greedy_cpu.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=5,6 "Built target greedy_cpu"
+.PHONY : CMakeFiles/greedy_cpu.dir/all
+
+# Include target in all.
+all: CMakeFiles/greedy_cpu.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/greedy_cpu.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/greedy_cpu.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 0
+.PHONY : CMakeFiles/greedy_cpu.dir/rule
+
+# Convenience name for target.
+greedy_cpu: CMakeFiles/greedy_cpu.dir/rule
+
+.PHONY : greedy_cpu
+
+# clean rule for target.
+CMakeFiles/greedy_cpu.dir/clean:
+	$(MAKE) -f CMakeFiles/greedy_cpu.dir/build.make CMakeFiles/greedy_cpu.dir/clean
+.PHONY : CMakeFiles/greedy_cpu.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/greedy_cpu.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/greedy_cpu_3.dir
+
+# All Build rule for target.
+CMakeFiles/greedy_cpu_3.dir/all:
+	$(MAKE) -f CMakeFiles/greedy_cpu_3.dir/build.make CMakeFiles/greedy_cpu_3.dir/depend
+	$(MAKE) -f CMakeFiles/greedy_cpu_3.dir/build.make CMakeFiles/greedy_cpu_3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=9,10 "Built target greedy_cpu_3"
+.PHONY : CMakeFiles/greedy_cpu_3.dir/all
+
+# Include target in all.
+all: CMakeFiles/greedy_cpu_3.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/greedy_cpu_3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/greedy_cpu_3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 0
+.PHONY : CMakeFiles/greedy_cpu_3.dir/rule
+
+# Convenience name for target.
+greedy_cpu_3: CMakeFiles/greedy_cpu_3.dir/rule
+
+.PHONY : greedy_cpu_3
+
+# clean rule for target.
+CMakeFiles/greedy_cpu_3.dir/clean:
+	$(MAKE) -f CMakeFiles/greedy_cpu_3.dir/build.make CMakeFiles/greedy_cpu_3.dir/clean
+.PHONY : CMakeFiles/greedy_cpu_3.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/greedy_cpu_3.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/annealing_2.dir
 
 # All Build rule for target.
@@ -97,187 +356,76 @@ clean: CMakeFiles/annealing_2.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/greedy_cpu.dir
+# Target rules for target CMakeFiles/annealing_3.dir
 
 # All Build rule for target.
-CMakeFiles/greedy_cpu.dir/all:
-	$(MAKE) -f CMakeFiles/greedy_cpu.dir/build.make CMakeFiles/greedy_cpu.dir/depend
-	$(MAKE) -f CMakeFiles/greedy_cpu.dir/build.make CMakeFiles/greedy_cpu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=3,4 "Built target greedy_cpu"
-.PHONY : CMakeFiles/greedy_cpu.dir/all
+CMakeFiles/annealing_3.dir/all:
+	$(MAKE) -f CMakeFiles/annealing_3.dir/build.make CMakeFiles/annealing_3.dir/depend
+	$(MAKE) -f CMakeFiles/annealing_3.dir/build.make CMakeFiles/annealing_3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=3,4 "Built target annealing_3"
+.PHONY : CMakeFiles/annealing_3.dir/all
 
 # Include target in all.
-all: CMakeFiles/greedy_cpu.dir/all
+all: CMakeFiles/annealing_3.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/greedy_cpu.dir/rule: cmake_check_build_system
+CMakeFiles/annealing_3.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/greedy_cpu.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/annealing_3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 0
-.PHONY : CMakeFiles/greedy_cpu.dir/rule
+.PHONY : CMakeFiles/annealing_3.dir/rule
 
 # Convenience name for target.
-greedy_cpu: CMakeFiles/greedy_cpu.dir/rule
+annealing_3: CMakeFiles/annealing_3.dir/rule
 
-.PHONY : greedy_cpu
-
-# clean rule for target.
-CMakeFiles/greedy_cpu.dir/clean:
-	$(MAKE) -f CMakeFiles/greedy_cpu.dir/build.make CMakeFiles/greedy_cpu.dir/clean
-.PHONY : CMakeFiles/greedy_cpu.dir/clean
+.PHONY : annealing_3
 
 # clean rule for target.
-clean: CMakeFiles/greedy_cpu.dir/clean
+CMakeFiles/annealing_3.dir/clean:
+	$(MAKE) -f CMakeFiles/annealing_3.dir/build.make CMakeFiles/annealing_3.dir/clean
+.PHONY : CMakeFiles/annealing_3.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/annealing_3.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/krzysiek_ant.dir
+# Target rules for target CMakeFiles/tabu_search.dir
 
 # All Build rule for target.
-CMakeFiles/krzysiek_ant.dir/all:
-	$(MAKE) -f CMakeFiles/krzysiek_ant.dir/build.make CMakeFiles/krzysiek_ant.dir/depend
-	$(MAKE) -f CMakeFiles/krzysiek_ant.dir/build.make CMakeFiles/krzysiek_ant.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=9,10 "Built target krzysiek_ant"
-.PHONY : CMakeFiles/krzysiek_ant.dir/all
+CMakeFiles/tabu_search.dir/all:
+	$(MAKE) -f CMakeFiles/tabu_search.dir/build.make CMakeFiles/tabu_search.dir/depend
+	$(MAKE) -f CMakeFiles/tabu_search.dir/build.make CMakeFiles/tabu_search.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=24,25 "Built target tabu_search"
+.PHONY : CMakeFiles/tabu_search.dir/all
 
 # Include target in all.
-all: CMakeFiles/krzysiek_ant.dir/all
+all: CMakeFiles/tabu_search.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/krzysiek_ant.dir/rule: cmake_check_build_system
+CMakeFiles/tabu_search.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/krzysiek_ant.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tabu_search.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 0
-.PHONY : CMakeFiles/krzysiek_ant.dir/rule
+.PHONY : CMakeFiles/tabu_search.dir/rule
 
 # Convenience name for target.
-krzysiek_ant: CMakeFiles/krzysiek_ant.dir/rule
+tabu_search: CMakeFiles/tabu_search.dir/rule
 
-.PHONY : krzysiek_ant
-
-# clean rule for target.
-CMakeFiles/krzysiek_ant.dir/clean:
-	$(MAKE) -f CMakeFiles/krzysiek_ant.dir/build.make CMakeFiles/krzysiek_ant.dir/clean
-.PHONY : CMakeFiles/krzysiek_ant.dir/clean
+.PHONY : tabu_search
 
 # clean rule for target.
-clean: CMakeFiles/krzysiek_ant.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/maciej_ant.dir
-
-# All Build rule for target.
-CMakeFiles/maciej_ant.dir/all:
-	$(MAKE) -f CMakeFiles/maciej_ant.dir/build.make CMakeFiles/maciej_ant.dir/depend
-	$(MAKE) -f CMakeFiles/maciej_ant.dir/build.make CMakeFiles/maciej_ant.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=11,12 "Built target maciej_ant"
-.PHONY : CMakeFiles/maciej_ant.dir/all
-
-# Include target in all.
-all: CMakeFiles/maciej_ant.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/maciej_ant.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/maciej_ant.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 0
-.PHONY : CMakeFiles/maciej_ant.dir/rule
-
-# Convenience name for target.
-maciej_ant: CMakeFiles/maciej_ant.dir/rule
-
-.PHONY : maciej_ant
+CMakeFiles/tabu_search.dir/clean:
+	$(MAKE) -f CMakeFiles/tabu_search.dir/build.make CMakeFiles/tabu_search.dir/clean
+.PHONY : CMakeFiles/tabu_search.dir/clean
 
 # clean rule for target.
-CMakeFiles/maciej_ant.dir/clean:
-	$(MAKE) -f CMakeFiles/maciej_ant.dir/build.make CMakeFiles/maciej_ant.dir/clean
-.PHONY : CMakeFiles/maciej_ant.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/maciej_ant.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/solution_annealing.dir
-
-# All Build rule for target.
-CMakeFiles/solution_annealing.dir/all:
-	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/depend
-	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=13,14,15,16,17 "Built target solution_annealing"
-.PHONY : CMakeFiles/solution_annealing.dir/all
-
-# Include target in all.
-all: CMakeFiles/solution_annealing.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/solution_annealing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/solution_annealing.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 0
-.PHONY : CMakeFiles/solution_annealing.dir/rule
-
-# Convenience name for target.
-solution_annealing: CMakeFiles/solution_annealing.dir/rule
-
-.PHONY : solution_annealing
-
-# clean rule for target.
-CMakeFiles/solution_annealing.dir/clean:
-	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/clean
-.PHONY : CMakeFiles/solution_annealing.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/solution_annealing.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/judge_easy.dir
-
-# All Build rule for target.
-CMakeFiles/judge_easy.dir/all:
-	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/depend
-	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=5,6,7,8 "Built target judge_easy"
-.PHONY : CMakeFiles/judge_easy.dir/all
-
-# Include target in all.
-all: CMakeFiles/judge_easy.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/judge_easy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/judge_easy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 0
-.PHONY : CMakeFiles/judge_easy.dir/rule
-
-# Convenience name for target.
-judge_easy: CMakeFiles/judge_easy.dir/rule
-
-.PHONY : judge_easy
-
-# clean rule for target.
-CMakeFiles/judge_easy.dir/clean:
-	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/clean
-.PHONY : CMakeFiles/judge_easy.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/judge_easy.dir/clean
+clean: CMakeFiles/tabu_search.dir/clean
 
 .PHONY : clean
 

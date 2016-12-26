@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/krzysztof/ClionProjects/Lumberjack/solutions/maciej_ant_cpu.cpp
+iostream
+-
+fstream
+-
+istream
+-
+string
+-
+vector
+-
+cmath
+-
+ctime
+-
+algorithm
+-
+

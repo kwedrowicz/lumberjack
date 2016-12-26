@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/krzysztof/ClionProjects/Lumberjack/solutions/tabu_search.cpp
+iostream
+-
+vector
+-
+cmath
+-
+ctime
+-
+algorithm
+-
+

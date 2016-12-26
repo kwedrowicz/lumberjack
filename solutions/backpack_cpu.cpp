@@ -218,7 +218,28 @@ int main(int argc, char** argv)
     {
         for(int j = 0; j <= timeLimit; j++)
         {
-            if(trees[i].d+calculate_distance(i, ))
+            int best_value = -1;
+            int best_position = -1;
+            for(int k = 1; k < j; j++)
+            {
+                if(trees[i].d+calculate_distance(i,tab[i-1][k].cutted.back())+k <= j)
+                {
+                    int current_value = tab[i-1][k].res+max_element(cut_value[i], cut_value[i]+4);
+                    if(current_value > best_value)
+                    {
+                        best_value = current_value;
+                        best_position = k;
+                    }
+                }
+            }
+            if(best_value == -1 || tab[i-1][j].res > best_value)
+                tab[i][j] = tab[i-1][j];
+            else{
+                tab[i][j].cutted.push_back(i);
+                int direction = distance(cut_value[j], max_element(cut_value[j], cut_value[j]+4));
+                tab[i][j].directions.push_back()
+            }
+            //if(trees[i].d+calculate_distance(i, ))
         }
     }
     if(

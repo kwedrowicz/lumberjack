@@ -78,6 +78,7 @@ int readdata()
         else if(kind == "cut"){
             if(!forest->isTree(px,py))
             {
+                cout <<"Position: "<<px<<" "<<py<<" "<<forest->getSize()<<"\n";
                 printf("-1|Cutting tree on position where there is no tree\n");
                 exit(0);
             }
@@ -88,6 +89,10 @@ int readdata()
                 res += tree->getValue();
                 int current_height = tree->height;
                 forest->removeTree(px,py);
+                if(px == 4 && py == 147){
+                    printf("Ścięcie drzewa 36 P1");
+                    exit(0);
+                }
                 //printf("CUT %d %d\n", px, py);
                 int dx = 0;
                 int dy = 0;
@@ -120,6 +125,10 @@ int readdata()
                             tree = newTree;
                             current_height = tree->height;
                             forest->removeTree(tx,ty);
+                            if(tx == 4 && ty == 147){
+                                printf("Ścięcie drzewa 36 P2");
+                                exit(0);
+                            }
                         }
                         else
                             break;

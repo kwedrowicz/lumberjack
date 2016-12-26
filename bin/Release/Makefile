@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/krzysztof/ClionProjects/Lumberjack/bin/Release
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/krzysztof/programy/clion-2016.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/krzysztof/programy/clion-2016.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,43 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named annealing_2
+# Target rules for targets named judge_easy
 
 # Build rule for target.
-annealing_2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 annealing_2
-.PHONY : annealing_2
+judge_easy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 judge_easy
+.PHONY : judge_easy
 
 # fast build rule for target.
-annealing_2/fast:
-	$(MAKE) -f CMakeFiles/annealing_2.dir/build.make CMakeFiles/annealing_2.dir/build
-.PHONY : annealing_2/fast
+judge_easy/fast:
+	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/build
+.PHONY : judge_easy/fast
 
 #=============================================================================
-# Target rules for targets named greedy_cpu
+# Target rules for targets named greedy_cpu_2
 
 # Build rule for target.
-greedy_cpu: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 greedy_cpu
-.PHONY : greedy_cpu
+greedy_cpu_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 greedy_cpu_2
+.PHONY : greedy_cpu_2
 
 # fast build rule for target.
-greedy_cpu/fast:
-	$(MAKE) -f CMakeFiles/greedy_cpu.dir/build.make CMakeFiles/greedy_cpu.dir/build
-.PHONY : greedy_cpu/fast
-
-#=============================================================================
-# Target rules for targets named krzysiek_ant
-
-# Build rule for target.
-krzysiek_ant: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 krzysiek_ant
-.PHONY : krzysiek_ant
-
-# fast build rule for target.
-krzysiek_ant/fast:
-	$(MAKE) -f CMakeFiles/krzysiek_ant.dir/build.make CMakeFiles/krzysiek_ant.dir/build
-.PHONY : krzysiek_ant/fast
+greedy_cpu_2/fast:
+	$(MAKE) -f CMakeFiles/greedy_cpu_2.dir/build.make CMakeFiles/greedy_cpu_2.dir/build
+.PHONY : greedy_cpu_2/fast
 
 #=============================================================================
 # Target rules for targets named maciej_ant
@@ -176,17 +163,82 @@ solution_annealing/fast:
 .PHONY : solution_annealing/fast
 
 #=============================================================================
-# Target rules for targets named judge_easy
+# Target rules for targets named krzysiek_ant
 
 # Build rule for target.
-judge_easy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 judge_easy
-.PHONY : judge_easy
+krzysiek_ant: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 krzysiek_ant
+.PHONY : krzysiek_ant
 
 # fast build rule for target.
-judge_easy/fast:
-	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/build
-.PHONY : judge_easy/fast
+krzysiek_ant/fast:
+	$(MAKE) -f CMakeFiles/krzysiek_ant.dir/build.make CMakeFiles/krzysiek_ant.dir/build
+.PHONY : krzysiek_ant/fast
+
+#=============================================================================
+# Target rules for targets named greedy_cpu
+
+# Build rule for target.
+greedy_cpu: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 greedy_cpu
+.PHONY : greedy_cpu
+
+# fast build rule for target.
+greedy_cpu/fast:
+	$(MAKE) -f CMakeFiles/greedy_cpu.dir/build.make CMakeFiles/greedy_cpu.dir/build
+.PHONY : greedy_cpu/fast
+
+#=============================================================================
+# Target rules for targets named greedy_cpu_3
+
+# Build rule for target.
+greedy_cpu_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 greedy_cpu_3
+.PHONY : greedy_cpu_3
+
+# fast build rule for target.
+greedy_cpu_3/fast:
+	$(MAKE) -f CMakeFiles/greedy_cpu_3.dir/build.make CMakeFiles/greedy_cpu_3.dir/build
+.PHONY : greedy_cpu_3/fast
+
+#=============================================================================
+# Target rules for targets named annealing_2
+
+# Build rule for target.
+annealing_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 annealing_2
+.PHONY : annealing_2
+
+# fast build rule for target.
+annealing_2/fast:
+	$(MAKE) -f CMakeFiles/annealing_2.dir/build.make CMakeFiles/annealing_2.dir/build
+.PHONY : annealing_2/fast
+
+#=============================================================================
+# Target rules for targets named annealing_3
+
+# Build rule for target.
+annealing_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 annealing_3
+.PHONY : annealing_3
+
+# fast build rule for target.
+annealing_3/fast:
+	$(MAKE) -f CMakeFiles/annealing_3.dir/build.make CMakeFiles/annealing_3.dir/build
+.PHONY : annealing_3/fast
+
+#=============================================================================
+# Target rules for targets named tabu_search
+
+# Build rule for target.
+tabu_search: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tabu_search
+.PHONY : tabu_search
+
+# fast build rule for target.
+tabu_search/fast:
+	$(MAKE) -f CMakeFiles/tabu_search.dir/build.make CMakeFiles/tabu_search.dir/build
+.PHONY : tabu_search/fast
 
 Forest.o: Forest.cpp.o
 
@@ -194,8 +246,8 @@ Forest.o: Forest.cpp.o
 
 # target to build an object file
 Forest.cpp.o:
-	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/Forest.cpp.o
 	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/Forest.cpp.o
+	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/Forest.cpp.o
 .PHONY : Forest.cpp.o
 
 Forest.i: Forest.cpp.i
@@ -204,8 +256,8 @@ Forest.i: Forest.cpp.i
 
 # target to preprocess a source file
 Forest.cpp.i:
-	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/Forest.cpp.i
 	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/Forest.cpp.i
+	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/Forest.cpp.i
 .PHONY : Forest.cpp.i
 
 Forest.s: Forest.cpp.s
@@ -214,8 +266,8 @@ Forest.s: Forest.cpp.s
 
 # target to generate assembly for a file
 Forest.cpp.s:
-	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/Forest.cpp.s
 	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/Forest.cpp.s
+	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/Forest.cpp.s
 .PHONY : Forest.cpp.s
 
 Solution.o: Solution.cpp.o
@@ -251,8 +303,8 @@ Tree.o: Tree.cpp.o
 
 # target to build an object file
 Tree.cpp.o:
-	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/Tree.cpp.o
 	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/Tree.cpp.o
+	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/Tree.cpp.o
 .PHONY : Tree.cpp.o
 
 Tree.i: Tree.cpp.i
@@ -261,8 +313,8 @@ Tree.i: Tree.cpp.i
 
 # target to preprocess a source file
 Tree.cpp.i:
-	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/Tree.cpp.i
 	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/Tree.cpp.i
+	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/Tree.cpp.i
 .PHONY : Tree.cpp.i
 
 Tree.s: Tree.cpp.s
@@ -271,8 +323,8 @@ Tree.s: Tree.cpp.s
 
 # target to generate assembly for a file
 Tree.cpp.s:
-	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/Tree.cpp.s
 	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/Tree.cpp.s
+	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/Tree.cpp.s
 .PHONY : Tree.cpp.s
 
 judges/judge.o: judges/judge.cpp.o
@@ -329,6 +381,33 @@ solutions/annealing_2.cpp.s:
 	$(MAKE) -f CMakeFiles/annealing_2.dir/build.make CMakeFiles/annealing_2.dir/solutions/annealing_2.cpp.s
 .PHONY : solutions/annealing_2.cpp.s
 
+solutions/annealing_3.o: solutions/annealing_3.cpp.o
+
+.PHONY : solutions/annealing_3.o
+
+# target to build an object file
+solutions/annealing_3.cpp.o:
+	$(MAKE) -f CMakeFiles/annealing_3.dir/build.make CMakeFiles/annealing_3.dir/solutions/annealing_3.cpp.o
+.PHONY : solutions/annealing_3.cpp.o
+
+solutions/annealing_3.i: solutions/annealing_3.cpp.i
+
+.PHONY : solutions/annealing_3.i
+
+# target to preprocess a source file
+solutions/annealing_3.cpp.i:
+	$(MAKE) -f CMakeFiles/annealing_3.dir/build.make CMakeFiles/annealing_3.dir/solutions/annealing_3.cpp.i
+.PHONY : solutions/annealing_3.cpp.i
+
+solutions/annealing_3.s: solutions/annealing_3.cpp.s
+
+.PHONY : solutions/annealing_3.s
+
+# target to generate assembly for a file
+solutions/annealing_3.cpp.s:
+	$(MAKE) -f CMakeFiles/annealing_3.dir/build.make CMakeFiles/annealing_3.dir/solutions/annealing_3.cpp.s
+.PHONY : solutions/annealing_3.cpp.s
+
 solutions/greedy_cpu.o: solutions/greedy_cpu.cpp.o
 
 .PHONY : solutions/greedy_cpu.o
@@ -355,6 +434,60 @@ solutions/greedy_cpu.s: solutions/greedy_cpu.cpp.s
 solutions/greedy_cpu.cpp.s:
 	$(MAKE) -f CMakeFiles/greedy_cpu.dir/build.make CMakeFiles/greedy_cpu.dir/solutions/greedy_cpu.cpp.s
 .PHONY : solutions/greedy_cpu.cpp.s
+
+solutions/greedy_cpu_2.o: solutions/greedy_cpu_2.cpp.o
+
+.PHONY : solutions/greedy_cpu_2.o
+
+# target to build an object file
+solutions/greedy_cpu_2.cpp.o:
+	$(MAKE) -f CMakeFiles/greedy_cpu_2.dir/build.make CMakeFiles/greedy_cpu_2.dir/solutions/greedy_cpu_2.cpp.o
+.PHONY : solutions/greedy_cpu_2.cpp.o
+
+solutions/greedy_cpu_2.i: solutions/greedy_cpu_2.cpp.i
+
+.PHONY : solutions/greedy_cpu_2.i
+
+# target to preprocess a source file
+solutions/greedy_cpu_2.cpp.i:
+	$(MAKE) -f CMakeFiles/greedy_cpu_2.dir/build.make CMakeFiles/greedy_cpu_2.dir/solutions/greedy_cpu_2.cpp.i
+.PHONY : solutions/greedy_cpu_2.cpp.i
+
+solutions/greedy_cpu_2.s: solutions/greedy_cpu_2.cpp.s
+
+.PHONY : solutions/greedy_cpu_2.s
+
+# target to generate assembly for a file
+solutions/greedy_cpu_2.cpp.s:
+	$(MAKE) -f CMakeFiles/greedy_cpu_2.dir/build.make CMakeFiles/greedy_cpu_2.dir/solutions/greedy_cpu_2.cpp.s
+.PHONY : solutions/greedy_cpu_2.cpp.s
+
+solutions/greedy_cpu_3.o: solutions/greedy_cpu_3.cpp.o
+
+.PHONY : solutions/greedy_cpu_3.o
+
+# target to build an object file
+solutions/greedy_cpu_3.cpp.o:
+	$(MAKE) -f CMakeFiles/greedy_cpu_3.dir/build.make CMakeFiles/greedy_cpu_3.dir/solutions/greedy_cpu_3.cpp.o
+.PHONY : solutions/greedy_cpu_3.cpp.o
+
+solutions/greedy_cpu_3.i: solutions/greedy_cpu_3.cpp.i
+
+.PHONY : solutions/greedy_cpu_3.i
+
+# target to preprocess a source file
+solutions/greedy_cpu_3.cpp.i:
+	$(MAKE) -f CMakeFiles/greedy_cpu_3.dir/build.make CMakeFiles/greedy_cpu_3.dir/solutions/greedy_cpu_3.cpp.i
+.PHONY : solutions/greedy_cpu_3.cpp.i
+
+solutions/greedy_cpu_3.s: solutions/greedy_cpu_3.cpp.s
+
+.PHONY : solutions/greedy_cpu_3.s
+
+# target to generate assembly for a file
+solutions/greedy_cpu_3.cpp.s:
+	$(MAKE) -f CMakeFiles/greedy_cpu_3.dir/build.make CMakeFiles/greedy_cpu_3.dir/solutions/greedy_cpu_3.cpp.s
+.PHONY : solutions/greedy_cpu_3.cpp.s
 
 solutions/krzysiek_ant_cpu.o: solutions/krzysiek_ant_cpu.cpp.o
 
@@ -437,20 +570,51 @@ solutions/maciej_ant_cpu.cpp.s:
 	$(MAKE) -f CMakeFiles/maciej_ant.dir/build.make CMakeFiles/maciej_ant.dir/solutions/maciej_ant_cpu.cpp.s
 .PHONY : solutions/maciej_ant_cpu.cpp.s
 
+solutions/tabu_search.o: solutions/tabu_search.cpp.o
+
+.PHONY : solutions/tabu_search.o
+
+# target to build an object file
+solutions/tabu_search.cpp.o:
+	$(MAKE) -f CMakeFiles/tabu_search.dir/build.make CMakeFiles/tabu_search.dir/solutions/tabu_search.cpp.o
+.PHONY : solutions/tabu_search.cpp.o
+
+solutions/tabu_search.i: solutions/tabu_search.cpp.i
+
+.PHONY : solutions/tabu_search.i
+
+# target to preprocess a source file
+solutions/tabu_search.cpp.i:
+	$(MAKE) -f CMakeFiles/tabu_search.dir/build.make CMakeFiles/tabu_search.dir/solutions/tabu_search.cpp.i
+.PHONY : solutions/tabu_search.cpp.i
+
+solutions/tabu_search.s: solutions/tabu_search.cpp.s
+
+.PHONY : solutions/tabu_search.s
+
+# target to generate assembly for a file
+solutions/tabu_search.cpp.s:
+	$(MAKE) -f CMakeFiles/tabu_search.dir/build.make CMakeFiles/tabu_search.dir/solutions/tabu_search.cpp.s
+.PHONY : solutions/tabu_search.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... annealing_2"
-	@echo "... greedy_cpu"
-	@echo "... krzysiek_ant"
-	@echo "... maciej_ant"
 	@echo "... edit_cache"
-	@echo "... solution_annealing"
+	@echo "... rebuild_cache"
 	@echo "... judge_easy"
+	@echo "... greedy_cpu_2"
+	@echo "... maciej_ant"
+	@echo "... solution_annealing"
+	@echo "... krzysiek_ant"
+	@echo "... greedy_cpu"
+	@echo "... greedy_cpu_3"
+	@echo "... annealing_2"
+	@echo "... annealing_3"
+	@echo "... tabu_search"
 	@echo "... Forest.o"
 	@echo "... Forest.i"
 	@echo "... Forest.s"
@@ -466,9 +630,18 @@ help:
 	@echo "... solutions/annealing_2.o"
 	@echo "... solutions/annealing_2.i"
 	@echo "... solutions/annealing_2.s"
+	@echo "... solutions/annealing_3.o"
+	@echo "... solutions/annealing_3.i"
+	@echo "... solutions/annealing_3.s"
 	@echo "... solutions/greedy_cpu.o"
 	@echo "... solutions/greedy_cpu.i"
 	@echo "... solutions/greedy_cpu.s"
+	@echo "... solutions/greedy_cpu_2.o"
+	@echo "... solutions/greedy_cpu_2.i"
+	@echo "... solutions/greedy_cpu_2.s"
+	@echo "... solutions/greedy_cpu_3.o"
+	@echo "... solutions/greedy_cpu_3.i"
+	@echo "... solutions/greedy_cpu_3.s"
 	@echo "... solutions/krzysiek_ant_cpu.o"
 	@echo "... solutions/krzysiek_ant_cpu.i"
 	@echo "... solutions/krzysiek_ant_cpu.s"
@@ -478,6 +651,9 @@ help:
 	@echo "... solutions/maciej_ant_cpu.o"
 	@echo "... solutions/maciej_ant_cpu.i"
 	@echo "... solutions/maciej_ant_cpu.s"
+	@echo "... solutions/tabu_search.o"
+	@echo "... solutions/tabu_search.i"
+	@echo "... solutions/tabu_search.s"
 .PHONY : help
 
 
