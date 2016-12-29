@@ -60,13 +60,87 @@ CMAKE_SOURCE_DIR = /home/krzysztof/ClionProjects/Lumberjack
 CMAKE_BINARY_DIR = /home/krzysztof/ClionProjects/Lumberjack/bin/Release
 
 #=============================================================================
+# Target rules for target CMakeFiles/tabu_search.dir
+
+# All Build rule for target.
+CMakeFiles/tabu_search.dir/all:
+	$(MAKE) -f CMakeFiles/tabu_search.dir/build.make CMakeFiles/tabu_search.dir/depend
+	$(MAKE) -f CMakeFiles/tabu_search.dir/build.make CMakeFiles/tabu_search.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=28,29 "Built target tabu_search"
+.PHONY : CMakeFiles/tabu_search.dir/all
+
+# Include target in all.
+all: CMakeFiles/tabu_search.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tabu_search.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tabu_search.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 0
+.PHONY : CMakeFiles/tabu_search.dir/rule
+
+# Convenience name for target.
+tabu_search: CMakeFiles/tabu_search.dir/rule
+
+.PHONY : tabu_search
+
+# clean rule for target.
+CMakeFiles/tabu_search.dir/clean:
+	$(MAKE) -f CMakeFiles/tabu_search.dir/build.make CMakeFiles/tabu_search.dir/clean
+.PHONY : CMakeFiles/tabu_search.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/tabu_search.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/abc.dir
+
+# All Build rule for target.
+CMakeFiles/abc.dir/all:
+	$(MAKE) -f CMakeFiles/abc.dir/build.make CMakeFiles/abc.dir/depend
+	$(MAKE) -f CMakeFiles/abc.dir/build.make CMakeFiles/abc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=1,2 "Built target abc"
+.PHONY : CMakeFiles/abc.dir/all
+
+# Include target in all.
+all: CMakeFiles/abc.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/abc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/abc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 0
+.PHONY : CMakeFiles/abc.dir/rule
+
+# Convenience name for target.
+abc: CMakeFiles/abc.dir/rule
+
+.PHONY : abc
+
+# clean rule for target.
+CMakeFiles/abc.dir/clean:
+	$(MAKE) -f CMakeFiles/abc.dir/build.make CMakeFiles/abc.dir/clean
+.PHONY : CMakeFiles/abc.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/abc.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/judge_easy.dir
 
 # All Build rule for target.
 CMakeFiles/judge_easy.dir/all:
 	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/depend
 	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=11,12,13,14 "Built target judge_easy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=15,16,17,18 "Built target judge_easy"
 .PHONY : CMakeFiles/judge_easy.dir/all
 
 # Include target in all.
@@ -97,13 +171,50 @@ clean: CMakeFiles/judge_easy.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/tabu_search_2.dir
+
+# All Build rule for target.
+CMakeFiles/tabu_search_2.dir/all:
+	$(MAKE) -f CMakeFiles/tabu_search_2.dir/build.make CMakeFiles/tabu_search_2.dir/depend
+	$(MAKE) -f CMakeFiles/tabu_search_2.dir/build.make CMakeFiles/tabu_search_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=30,31 "Built target tabu_search_2"
+.PHONY : CMakeFiles/tabu_search_2.dir/all
+
+# Include target in all.
+all: CMakeFiles/tabu_search_2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tabu_search_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tabu_search_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 0
+.PHONY : CMakeFiles/tabu_search_2.dir/rule
+
+# Convenience name for target.
+tabu_search_2: CMakeFiles/tabu_search_2.dir/rule
+
+.PHONY : tabu_search_2
+
+# clean rule for target.
+CMakeFiles/tabu_search_2.dir/clean:
+	$(MAKE) -f CMakeFiles/tabu_search_2.dir/build.make CMakeFiles/tabu_search_2.dir/clean
+.PHONY : CMakeFiles/tabu_search_2.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/tabu_search_2.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/greedy_cpu_2.dir
 
 # All Build rule for target.
 CMakeFiles/greedy_cpu_2.dir/all:
 	$(MAKE) -f CMakeFiles/greedy_cpu_2.dir/build.make CMakeFiles/greedy_cpu_2.dir/depend
 	$(MAKE) -f CMakeFiles/greedy_cpu_2.dir/build.make CMakeFiles/greedy_cpu_2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=7,8 "Built target greedy_cpu_2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=11,12 "Built target greedy_cpu_2"
 .PHONY : CMakeFiles/greedy_cpu_2.dir/all
 
 # Include target in all.
@@ -140,7 +251,7 @@ clean: CMakeFiles/greedy_cpu_2.dir/clean
 CMakeFiles/maciej_ant.dir/all:
 	$(MAKE) -f CMakeFiles/maciej_ant.dir/build.make CMakeFiles/maciej_ant.dir/depend
 	$(MAKE) -f CMakeFiles/maciej_ant.dir/build.make CMakeFiles/maciej_ant.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=17,18 "Built target maciej_ant"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=21,22 "Built target maciej_ant"
 .PHONY : CMakeFiles/maciej_ant.dir/all
 
 # Include target in all.
@@ -177,7 +288,7 @@ clean: CMakeFiles/maciej_ant.dir/clean
 CMakeFiles/solution_annealing.dir/all:
 	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/depend
 	$(MAKE) -f CMakeFiles/solution_annealing.dir/build.make CMakeFiles/solution_annealing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=19,20,21,22,23 "Built target solution_annealing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=23,24,25,26,27 "Built target solution_annealing"
 .PHONY : CMakeFiles/solution_annealing.dir/all
 
 # Include target in all.
@@ -214,7 +325,7 @@ clean: CMakeFiles/solution_annealing.dir/clean
 CMakeFiles/krzysiek_ant.dir/all:
 	$(MAKE) -f CMakeFiles/krzysiek_ant.dir/build.make CMakeFiles/krzysiek_ant.dir/depend
 	$(MAKE) -f CMakeFiles/krzysiek_ant.dir/build.make CMakeFiles/krzysiek_ant.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=15,16 "Built target krzysiek_ant"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=19,20 "Built target krzysiek_ant"
 .PHONY : CMakeFiles/krzysiek_ant.dir/all
 
 # Include target in all.
@@ -251,7 +362,7 @@ clean: CMakeFiles/krzysiek_ant.dir/clean
 CMakeFiles/greedy_cpu.dir/all:
 	$(MAKE) -f CMakeFiles/greedy_cpu.dir/build.make CMakeFiles/greedy_cpu.dir/depend
 	$(MAKE) -f CMakeFiles/greedy_cpu.dir/build.make CMakeFiles/greedy_cpu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=5,6 "Built target greedy_cpu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=9,10 "Built target greedy_cpu"
 .PHONY : CMakeFiles/greedy_cpu.dir/all
 
 # Include target in all.
@@ -288,7 +399,7 @@ clean: CMakeFiles/greedy_cpu.dir/clean
 CMakeFiles/greedy_cpu_3.dir/all:
 	$(MAKE) -f CMakeFiles/greedy_cpu_3.dir/build.make CMakeFiles/greedy_cpu_3.dir/depend
 	$(MAKE) -f CMakeFiles/greedy_cpu_3.dir/build.make CMakeFiles/greedy_cpu_3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=9,10 "Built target greedy_cpu_3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=13,14 "Built target greedy_cpu_3"
 .PHONY : CMakeFiles/greedy_cpu_3.dir/all
 
 # Include target in all.
@@ -325,7 +436,7 @@ clean: CMakeFiles/greedy_cpu_3.dir/clean
 CMakeFiles/annealing_2.dir/all:
 	$(MAKE) -f CMakeFiles/annealing_2.dir/build.make CMakeFiles/annealing_2.dir/depend
 	$(MAKE) -f CMakeFiles/annealing_2.dir/build.make CMakeFiles/annealing_2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=1,2 "Built target annealing_2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=3,4 "Built target annealing_2"
 .PHONY : CMakeFiles/annealing_2.dir/all
 
 # Include target in all.
@@ -362,7 +473,7 @@ clean: CMakeFiles/annealing_2.dir/clean
 CMakeFiles/annealing_3.dir/all:
 	$(MAKE) -f CMakeFiles/annealing_3.dir/build.make CMakeFiles/annealing_3.dir/depend
 	$(MAKE) -f CMakeFiles/annealing_3.dir/build.make CMakeFiles/annealing_3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=3,4 "Built target annealing_3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=5,6 "Built target annealing_3"
 .PHONY : CMakeFiles/annealing_3.dir/all
 
 # Include target in all.
@@ -393,39 +504,39 @@ clean: CMakeFiles/annealing_3.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/tabu_search.dir
+# Target rules for target CMakeFiles/annealing_4.dir
 
 # All Build rule for target.
-CMakeFiles/tabu_search.dir/all:
-	$(MAKE) -f CMakeFiles/tabu_search.dir/build.make CMakeFiles/tabu_search.dir/depend
-	$(MAKE) -f CMakeFiles/tabu_search.dir/build.make CMakeFiles/tabu_search.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=24,25 "Built target tabu_search"
-.PHONY : CMakeFiles/tabu_search.dir/all
+CMakeFiles/annealing_4.dir/all:
+	$(MAKE) -f CMakeFiles/annealing_4.dir/build.make CMakeFiles/annealing_4.dir/depend
+	$(MAKE) -f CMakeFiles/annealing_4.dir/build.make CMakeFiles/annealing_4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles --progress-num=7,8 "Built target annealing_4"
+.PHONY : CMakeFiles/annealing_4.dir/all
 
 # Include target in all.
-all: CMakeFiles/tabu_search.dir/all
+all: CMakeFiles/annealing_4.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/tabu_search.dir/rule: cmake_check_build_system
+CMakeFiles/annealing_4.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tabu_search.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/annealing_4.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/krzysztof/ClionProjects/Lumberjack/bin/Release/CMakeFiles 0
-.PHONY : CMakeFiles/tabu_search.dir/rule
+.PHONY : CMakeFiles/annealing_4.dir/rule
 
 # Convenience name for target.
-tabu_search: CMakeFiles/tabu_search.dir/rule
+annealing_4: CMakeFiles/annealing_4.dir/rule
 
-.PHONY : tabu_search
-
-# clean rule for target.
-CMakeFiles/tabu_search.dir/clean:
-	$(MAKE) -f CMakeFiles/tabu_search.dir/build.make CMakeFiles/tabu_search.dir/clean
-.PHONY : CMakeFiles/tabu_search.dir/clean
+.PHONY : annealing_4
 
 # clean rule for target.
-clean: CMakeFiles/tabu_search.dir/clean
+CMakeFiles/annealing_4.dir/clean:
+	$(MAKE) -f CMakeFiles/annealing_4.dir/build.make CMakeFiles/annealing_4.dir/clean
+.PHONY : CMakeFiles/annealing_4.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/annealing_4.dir/clean
 
 .PHONY : clean
 

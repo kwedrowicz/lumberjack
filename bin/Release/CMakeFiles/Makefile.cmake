@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../../CMakeLists.txt"
-  "CMakeFiles/3.6.2/CMakeCCompiler.cmake"
-  "CMakeFiles/3.6.2/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.6.2/CMakeSystem.cmake"
+  "CMakeFiles/3.6.3/CMakeCCompiler.cmake"
+  "CMakeFiles/3.6.3/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.6.3/CMakeSystem.cmake"
   "/home/krzysztof/programy/clion-2016.2.3/bin/cmake/share/cmake-3.6/Modules/CMakeCInformation.cmake"
   "/home/krzysztof/programy/clion-2016.2.3/bin/cmake/share/cmake-3.6/Modules/CMakeCXXInformation.cmake"
   "/home/krzysztof/programy/clion-2016.2.3/bin/cmake/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake"
@@ -44,7 +44,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/tabu_search.dir/DependInfo.cmake"
+  "CMakeFiles/abc.dir/DependInfo.cmake"
   "CMakeFiles/judge_easy.dir/DependInfo.cmake"
+  "CMakeFiles/tabu_search_2.dir/DependInfo.cmake"
   "CMakeFiles/greedy_cpu_2.dir/DependInfo.cmake"
   "CMakeFiles/maciej_ant.dir/DependInfo.cmake"
   "CMakeFiles/solution_annealing.dir/DependInfo.cmake"
@@ -53,5 +56,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/greedy_cpu_3.dir/DependInfo.cmake"
   "CMakeFiles/annealing_2.dir/DependInfo.cmake"
   "CMakeFiles/annealing_3.dir/DependInfo.cmake"
-  "CMakeFiles/tabu_search.dir/DependInfo.cmake"
+  "CMakeFiles/annealing_4.dir/DependInfo.cmake"
   )

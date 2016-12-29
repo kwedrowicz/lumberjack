@@ -27,11 +27,93 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
+			<Target title="tabu_search">
+				<Option output="/home/krzysztof/ClionProjects/Lumberjack/bin/Release/tabu_search" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/krzysztof/ClionProjects/Lumberjack/bin/Release"/>
-				<Option type="4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 tabu_search"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tabu_search/fast">
+				<Option output="/home/krzysztof/ClionProjects/Lumberjack/bin/Release/tabu_search" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/krzysztof/ClionProjects/Lumberjack/bin/Release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 tabu_search/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="abc">
+				<Option output="/home/krzysztof/ClionProjects/Lumberjack/bin/Release/abc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/krzysztof/ClionProjects/Lumberjack/bin/Release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 abc"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="abc/fast">
+				<Option output="/home/krzysztof/ClionProjects/Lumberjack/bin/Release/abc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/krzysztof/ClionProjects/Lumberjack/bin/Release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 abc/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
@@ -78,6 +160,52 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 judge_easy/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tabu_search_2">
+				<Option output="/home/krzysztof/ClionProjects/Lumberjack/bin/Release/tabu_search_2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/krzysztof/ClionProjects/Lumberjack/bin/Release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 tabu_search_2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tabu_search_2/fast">
+				<Option output="/home/krzysztof/ClionProjects/Lumberjack/bin/Release/tabu_search_2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/krzysztof/ClionProjects/Lumberjack/bin/Release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 tabu_search_2/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
@@ -451,31 +579,18 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tabu_search">
-				<Option output="/home/krzysztof/ClionProjects/Lumberjack/bin/Release/tabu_search" prefix_auto="0" extension_auto="0"/>
+			<Target title="rebuild_cache">
 				<Option working_dir="/home/krzysztof/ClionProjects/Lumberjack/bin/Release"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-				</Compiler>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 tabu_search"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tabu_search/fast">
-				<Option output="/home/krzysztof/ClionProjects/Lumberjack/bin/Release/tabu_search" prefix_auto="0" extension_auto="0"/>
+			<Target title="annealing_4">
+				<Option output="/home/krzysztof/ClionProjects/Lumberjack/bin/Release/annealing_4" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/krzysztof/ClionProjects/Lumberjack/bin/Release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -491,7 +606,30 @@
 					<Add directory="/usr/include/c++/4.8/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 tabu_search/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 annealing_4"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="annealing_4/fast">
+				<Option output="/home/krzysztof/ClionProjects/Lumberjack/bin/Release/annealing_4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/krzysztof/ClionProjects/Lumberjack/bin/Release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 annealing_4/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/krzysztof/ClionProjects/Lumberjack/bin/Release/Makefile&quot;  VERBOSE=1 clean"/>
@@ -526,11 +664,17 @@
 		<Unit filename="/home/krzysztof/ClionProjects/Lumberjack/oi.h">
 			<Option target="judge_easy"/>
 		</Unit>
+		<Unit filename="/home/krzysztof/ClionProjects/Lumberjack/solutions/abc.cpp">
+			<Option target="abc"/>
+		</Unit>
 		<Unit filename="/home/krzysztof/ClionProjects/Lumberjack/solutions/annealing_2.cpp">
 			<Option target="annealing_2"/>
 		</Unit>
 		<Unit filename="/home/krzysztof/ClionProjects/Lumberjack/solutions/annealing_3.cpp">
 			<Option target="annealing_3"/>
+		</Unit>
+		<Unit filename="/home/krzysztof/ClionProjects/Lumberjack/solutions/annealing_4.cpp">
+			<Option target="annealing_4"/>
 		</Unit>
 		<Unit filename="/home/krzysztof/ClionProjects/Lumberjack/solutions/greedy_cpu.cpp">
 			<Option target="greedy_cpu"/>
@@ -552,6 +696,9 @@
 		</Unit>
 		<Unit filename="/home/krzysztof/ClionProjects/Lumberjack/solutions/tabu_search.cpp">
 			<Option target="tabu_search"/>
+		</Unit>
+		<Unit filename="/home/krzysztof/ClionProjects/Lumberjack/solutions/tabu_search_2.cpp">
+			<Option target="tabu_search_2"/>
 		</Unit>
 		<Unit filename="/home/krzysztof/ClionProjects/Lumberjack/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

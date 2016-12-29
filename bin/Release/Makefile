@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tabu_search
+
+# Build rule for target.
+tabu_search: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tabu_search
+.PHONY : tabu_search
+
+# fast build rule for target.
+tabu_search/fast:
+	$(MAKE) -f CMakeFiles/tabu_search.dir/build.make CMakeFiles/tabu_search.dir/build
+.PHONY : tabu_search/fast
+
+#=============================================================================
+# Target rules for targets named abc
+
+# Build rule for target.
+abc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 abc
+.PHONY : abc
+
+# fast build rule for target.
+abc/fast:
+	$(MAKE) -f CMakeFiles/abc.dir/build.make CMakeFiles/abc.dir/build
+.PHONY : abc/fast
+
+#=============================================================================
 # Target rules for targets named judge_easy
 
 # Build rule for target.
@@ -122,6 +148,19 @@ judge_easy: cmake_check_build_system
 judge_easy/fast:
 	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/build
 .PHONY : judge_easy/fast
+
+#=============================================================================
+# Target rules for targets named tabu_search_2
+
+# Build rule for target.
+tabu_search_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tabu_search_2
+.PHONY : tabu_search_2
+
+# fast build rule for target.
+tabu_search_2/fast:
+	$(MAKE) -f CMakeFiles/tabu_search_2.dir/build.make CMakeFiles/tabu_search_2.dir/build
+.PHONY : tabu_search_2/fast
 
 #=============================================================================
 # Target rules for targets named greedy_cpu_2
@@ -228,17 +267,17 @@ annealing_3/fast:
 .PHONY : annealing_3/fast
 
 #=============================================================================
-# Target rules for targets named tabu_search
+# Target rules for targets named annealing_4
 
 # Build rule for target.
-tabu_search: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tabu_search
-.PHONY : tabu_search
+annealing_4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 annealing_4
+.PHONY : annealing_4
 
 # fast build rule for target.
-tabu_search/fast:
-	$(MAKE) -f CMakeFiles/tabu_search.dir/build.make CMakeFiles/tabu_search.dir/build
-.PHONY : tabu_search/fast
+annealing_4/fast:
+	$(MAKE) -f CMakeFiles/annealing_4.dir/build.make CMakeFiles/annealing_4.dir/build
+.PHONY : annealing_4/fast
 
 Forest.o: Forest.cpp.o
 
@@ -354,6 +393,33 @@ judges/judge.cpp.s:
 	$(MAKE) -f CMakeFiles/judge_easy.dir/build.make CMakeFiles/judge_easy.dir/judges/judge.cpp.s
 .PHONY : judges/judge.cpp.s
 
+solutions/abc.o: solutions/abc.cpp.o
+
+.PHONY : solutions/abc.o
+
+# target to build an object file
+solutions/abc.cpp.o:
+	$(MAKE) -f CMakeFiles/abc.dir/build.make CMakeFiles/abc.dir/solutions/abc.cpp.o
+.PHONY : solutions/abc.cpp.o
+
+solutions/abc.i: solutions/abc.cpp.i
+
+.PHONY : solutions/abc.i
+
+# target to preprocess a source file
+solutions/abc.cpp.i:
+	$(MAKE) -f CMakeFiles/abc.dir/build.make CMakeFiles/abc.dir/solutions/abc.cpp.i
+.PHONY : solutions/abc.cpp.i
+
+solutions/abc.s: solutions/abc.cpp.s
+
+.PHONY : solutions/abc.s
+
+# target to generate assembly for a file
+solutions/abc.cpp.s:
+	$(MAKE) -f CMakeFiles/abc.dir/build.make CMakeFiles/abc.dir/solutions/abc.cpp.s
+.PHONY : solutions/abc.cpp.s
+
 solutions/annealing_2.o: solutions/annealing_2.cpp.o
 
 .PHONY : solutions/annealing_2.o
@@ -407,6 +473,33 @@ solutions/annealing_3.s: solutions/annealing_3.cpp.s
 solutions/annealing_3.cpp.s:
 	$(MAKE) -f CMakeFiles/annealing_3.dir/build.make CMakeFiles/annealing_3.dir/solutions/annealing_3.cpp.s
 .PHONY : solutions/annealing_3.cpp.s
+
+solutions/annealing_4.o: solutions/annealing_4.cpp.o
+
+.PHONY : solutions/annealing_4.o
+
+# target to build an object file
+solutions/annealing_4.cpp.o:
+	$(MAKE) -f CMakeFiles/annealing_4.dir/build.make CMakeFiles/annealing_4.dir/solutions/annealing_4.cpp.o
+.PHONY : solutions/annealing_4.cpp.o
+
+solutions/annealing_4.i: solutions/annealing_4.cpp.i
+
+.PHONY : solutions/annealing_4.i
+
+# target to preprocess a source file
+solutions/annealing_4.cpp.i:
+	$(MAKE) -f CMakeFiles/annealing_4.dir/build.make CMakeFiles/annealing_4.dir/solutions/annealing_4.cpp.i
+.PHONY : solutions/annealing_4.cpp.i
+
+solutions/annealing_4.s: solutions/annealing_4.cpp.s
+
+.PHONY : solutions/annealing_4.s
+
+# target to generate assembly for a file
+solutions/annealing_4.cpp.s:
+	$(MAKE) -f CMakeFiles/annealing_4.dir/build.make CMakeFiles/annealing_4.dir/solutions/annealing_4.cpp.s
+.PHONY : solutions/annealing_4.cpp.s
 
 solutions/greedy_cpu.o: solutions/greedy_cpu.cpp.o
 
@@ -597,6 +690,33 @@ solutions/tabu_search.cpp.s:
 	$(MAKE) -f CMakeFiles/tabu_search.dir/build.make CMakeFiles/tabu_search.dir/solutions/tabu_search.cpp.s
 .PHONY : solutions/tabu_search.cpp.s
 
+solutions/tabu_search_2.o: solutions/tabu_search_2.cpp.o
+
+.PHONY : solutions/tabu_search_2.o
+
+# target to build an object file
+solutions/tabu_search_2.cpp.o:
+	$(MAKE) -f CMakeFiles/tabu_search_2.dir/build.make CMakeFiles/tabu_search_2.dir/solutions/tabu_search_2.cpp.o
+.PHONY : solutions/tabu_search_2.cpp.o
+
+solutions/tabu_search_2.i: solutions/tabu_search_2.cpp.i
+
+.PHONY : solutions/tabu_search_2.i
+
+# target to preprocess a source file
+solutions/tabu_search_2.cpp.i:
+	$(MAKE) -f CMakeFiles/tabu_search_2.dir/build.make CMakeFiles/tabu_search_2.dir/solutions/tabu_search_2.cpp.i
+.PHONY : solutions/tabu_search_2.cpp.i
+
+solutions/tabu_search_2.s: solutions/tabu_search_2.cpp.s
+
+.PHONY : solutions/tabu_search_2.s
+
+# target to generate assembly for a file
+solutions/tabu_search_2.cpp.s:
+	$(MAKE) -f CMakeFiles/tabu_search_2.dir/build.make CMakeFiles/tabu_search_2.dir/solutions/tabu_search_2.cpp.s
+.PHONY : solutions/tabu_search_2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -604,8 +724,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... rebuild_cache"
+	@echo "... tabu_search"
+	@echo "... abc"
 	@echo "... judge_easy"
+	@echo "... tabu_search_2"
 	@echo "... greedy_cpu_2"
 	@echo "... maciej_ant"
 	@echo "... solution_annealing"
@@ -614,7 +736,8 @@ help:
 	@echo "... greedy_cpu_3"
 	@echo "... annealing_2"
 	@echo "... annealing_3"
-	@echo "... tabu_search"
+	@echo "... rebuild_cache"
+	@echo "... annealing_4"
 	@echo "... Forest.o"
 	@echo "... Forest.i"
 	@echo "... Forest.s"
@@ -627,12 +750,18 @@ help:
 	@echo "... judges/judge.o"
 	@echo "... judges/judge.i"
 	@echo "... judges/judge.s"
+	@echo "... solutions/abc.o"
+	@echo "... solutions/abc.i"
+	@echo "... solutions/abc.s"
 	@echo "... solutions/annealing_2.o"
 	@echo "... solutions/annealing_2.i"
 	@echo "... solutions/annealing_2.s"
 	@echo "... solutions/annealing_3.o"
 	@echo "... solutions/annealing_3.i"
 	@echo "... solutions/annealing_3.s"
+	@echo "... solutions/annealing_4.o"
+	@echo "... solutions/annealing_4.i"
+	@echo "... solutions/annealing_4.s"
 	@echo "... solutions/greedy_cpu.o"
 	@echo "... solutions/greedy_cpu.i"
 	@echo "... solutions/greedy_cpu.s"
@@ -654,6 +783,9 @@ help:
 	@echo "... solutions/tabu_search.o"
 	@echo "... solutions/tabu_search.i"
 	@echo "... solutions/tabu_search.s"
+	@echo "... solutions/tabu_search_2.o"
+	@echo "... solutions/tabu_search_2.i"
+	@echo "... solutions/tabu_search_2.s"
 .PHONY : help
 
 
