@@ -1,1 +1,0 @@
-/usr/bin/c++    -std=c++11 -O3 -DNDEBUG   CMakeFiles/greedy_cpu_3.dir/solutions/greedy_cpu_3.cpp.o  -o greedy_cpu_3 

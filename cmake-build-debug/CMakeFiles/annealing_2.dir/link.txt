@@ -1,1 +1,0 @@
-/usr/bin/c++    -std=c++11 -g   CMakeFiles/annealing_2.dir/solutions/annealing_2.cpp.o  -o annealing_2 

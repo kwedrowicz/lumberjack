@@ -1,1 +1,0 @@
-/usr/bin/c++    -std=c++11 -O3 -DNDEBUG   CMakeFiles/solution_annealing.dir/Tree.cpp.o CMakeFiles/solution_annealing.dir/Forest.cpp.o CMakeFiles/solution_annealing.dir/solutions/lumberjack_annealing.cpp.o CMakeFiles/solution_annealing.dir/Solution.cpp.o  -o solution_annealing 

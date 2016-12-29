@@ -1,1 +1,0 @@
-/usr/bin/c++    -std=c++11 -O3 -DNDEBUG   CMakeFiles/krzysiek_ant.dir/solutions/krzysiek_ant_cpu.cpp.o  -o krzysiek_ant 

@@ -1,1 +1,0 @@
-/usr/bin/c++    -std=c++11 -O3 -DNDEBUG   CMakeFiles/annealing_3.dir/solutions/annealing_3.cpp.o  -o annealing_3 
