@@ -55,6 +55,61 @@ int tree_weight(int i)
     return trees[i].h * trees[i].d * trees[i].c;
 }
 
+vector<int> cuttedTrees(int i, int direction){
+
+    vector<int> ct;
+
+    int sum = tree_value(i);
+    int height = trees[i].h;
+    int x = trees[i].x;
+    int y = trees[i].y;
+    int cur_tree = i;
+    ct.push_back(cur_tree);
+    int dx, dy;
+    if(direction == 0)
+    {
+        dx = 0;
+        dy = -1;
+    }
+    if(direction == 1)
+    {
+        dx = 1;
+        dy = 0;
+    }
+    if(direction == 2)
+    {
+        dx = 0;
+        dy = 1;
+    }
+    if(direction == 3)
+    {
+        dx = -1;
+        dy = 0;
+    }
+    height--;
+    while(height > 0)
+    {
+        x += dx;
+        y += dy;
+        if(x < 0 || y < 0 || x >= mapSize || y >= mapSize)
+            break;
+        if(forest[x][y] > 0 && !cutted[forest[x][y]])
+        {
+            if(tree_weight(cur_tree) > tree_weight(forest[x][y]))
+            {
+                sum += tree_value(forest[x][y]);
+                height = trees[forest[x][y]].h;
+                cur_tree = forest[x][y];
+                ct.push_back(cur_tree);
+            }
+            else
+                break;
+        }
+        height--;
+    }
+    return ct;
+}
+
 int cutTree(int i, int direction)
 {
     int sum = tree_value(i);
@@ -231,7 +286,7 @@ int main(int argc, char** argv)
         for(int j = 1; j <= treeCount; j++)
         {
             int cost = trees[j].d+calculate_distance(best_ant.i, j);
-            int direction = distance(cut_value[j], max_element(cut_value[j], cut_value[j]+4));
+            int direction = (int)distance(cut_value[j], max_element(cut_value[j], cut_value[j]+4));
             if(!cutted[j] && best_ant.t >= cost)
             {
                 double res = cut_value[j][direction]/(double)cost;
@@ -240,6 +295,26 @@ int main(int argc, char** argv)
                     best_value = res;
                     best_tree = j;
                     cut_direction = direction;
+                }
+                vector<int> cutted_trees = cuttedTrees(j, direction);
+                cutTree(j, direction);
+                calculate_cut_values();
+                for(int k = 1; k <= treeCount; k++){
+
+                    int cost2 = trees[k].d+calculate_distance(j,k);
+                    int direction2 = (int)distance(cut_value[k], max_element(cut_value[k], cut_value[k]+4));
+                    if(!cutted[k] && best_ant.t >= (cost+cost2)){
+                        res = (cut_value[j][direction]+cut_value[k][direction2])/double(cost+cost2);
+                        if(res > best_value)
+                        {
+                            best_value = res;
+                            best_tree = j;
+                            cut_direction = direction;
+                        }
+                    }
+                }
+                for(int a = 0; a < cutted_trees.size(); a++){
+                    cutted[cutted_trees[a]] = false;
                 }
             }
         }

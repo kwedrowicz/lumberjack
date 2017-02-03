@@ -1,3 +1,6 @@
+//NIE DZIAŁA DOBREZ
+
+
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -102,6 +105,10 @@ struct solution{
     int lastPosition;
     int result = 0;
     int timeLeft;
+    bool operator < (const solution& sol) const
+    {
+        return (result < sol.result);
+    }
     void init(){
         for(int i = 0; i <= treeCount; i++){
             used[i] = false;
@@ -263,7 +270,44 @@ struct solution{
             }
         }
     }
-    void createFirstSolution(){
+    void createRandomSolution(){
+        prepare();
+        order[0] = 0;
+        vector<int> possibilities;
+        while(timeLeft > 0){
+            for(int j = 1; j <= treeCount; j++){
+                int cost = trees[j].d+calculate_distance(order[lastPosition], j);
+                int direction = (int)distance(cut_value[j], max_element(cut_value[j], cut_value[j]+4));
+                if(!cutted[j] && timeLeft >= cost)
+                {
+                    possibilities.push_back(j);
+                }
+            }
+            if(possibilities.size() > 0){
+                int chosen_tree = possibilities[int(rand() % possibilities.size())];
+                lastPosition++;
+                used[chosen_tree] = true;
+                order[lastPosition] = chosen_tree;
+                direction[lastPosition] = (int)distance(cut_value[chosen_tree], max_element(cut_value[chosen_tree], cut_value[chosen_tree]+4));
+                int cost = trees[chosen_tree].d+calculate_distance(order[lastPosition-1], chosen_tree);
+                timeLeft -= cost;
+                result += cutTree(order[lastPosition], direction[lastPosition]);
+                possibilities.clear();
+            }
+            else{
+                break;
+            }
+        }
+        int temp_position = lastPosition+1;
+        for(int i = 1; i <= treeCount; i++){
+            if(!used[i]){
+                order[temp_position] = i;
+                direction[temp_position] = (int) distance(cut_value[i], max_element(cut_value[i], cut_value[i] + 4));
+                temp_position++;
+            }
+        }
+    }
+    void createGreadySolution(){
         prepare();
         order[0] = 0;
         while(timeLeft > 0){
@@ -322,6 +366,7 @@ struct solution{
         swap(direction[rand1], direction[rand2]);
     }
     void printResult(){
+
         timeLeft = timeLimit;
         for(int i = 1; i <= lastPosition; i++)
         {
@@ -375,72 +420,75 @@ void loadFromStream(istream &stream) {
     }
 }
 
-int main(int argc, char** argv)
-{
-    const clock_t begin_time = clock();
+double predict(solution sol, int next, int depth, int val, int cost){
+    sol.lastPosition++;
+    sol.order[sol.lastPosition] = next;
+    int direction = (int)distance(cut_value[next], max_element(cut_value[next], cut_value[next]+4));
+    sol.direction[sol.lastPosition] = direction;
+    int cost2 = trees[sol.order[sol.lastPosition]].d+calculate_distance(sol.order[sol.lastPosition-1], sol.order[sol.lastPosition]);
+    if(cost2 > sol.timeLeft){
+        return -1;
+    }
+    int val2 = sol.cutTree(next, direction);
+    if(depth == 0){
+        return (val+val2)/double(cost+cost2);
+    }
+    else{
+        double max_value = -1;
+        for(int i = 1; i <= treeCount; i++){
+            int cur_cost = calculate_distance(sol.order[sol.lastPosition], i)+trees[i].d;
+            if(!sol.cutted[i] && sol.timeLeft >= cur_cost);
+                max_value = max(max_value, predict(sol, i, depth-1, val+val2, cost+cost2));
+        }
+        return max_value;
+    }
+}
+
+int main(int argc, char** argv) {
     loadFromStream(cin);
-    srand(static_cast<unsigned int>(time(0)));
-    trees[0] = {0,0,0,0,0,0}; // create fake tree on starting point
-    srand( time( NULL ) );
+    trees[0] = {0, 0, 0, 0, 0, 0}; // create fake tree on starting point
     calculate_cut_values();
     bestSolution.init();
-    bestSolution.createFirstSolution();
-    bestSolution.calculateResult();
-
-    solution currentSolution, oldSolution;
-
-    oldSolution = bestSolution;
-
-    while(true)
-    {
-            double bound = 0.5;
-            double deadline = 0.9;
-            double past_time = float( clock () - begin_time ) /  CLOCKS_PER_SEC;
-            double full_time;
-            double divider;
-            if(treeCount <= 100)
-                full_time = TIME1;
-            else if(treeCount <= 1000)
-                full_time = TIME2;
-            else
-                full_time = TIME3;
-            double part = past_time/full_time;
-            if(part < bound){
-                // y = 1,4286x + 1
-                divider = 1.4286*part+1;
-            }
-            else{
-                // y = 26,667x - 16,667 wrong
-                // y = 20x - 8;
-
-                divider = 26.667*part-16.667;
-            }
-
-            currentSolution = oldSolution;
-            currentSolution.mutate();
-            currentSolution.calculateResult();
-
-            if(bestSolution.result < currentSolution.result){
-                bestSolution = currentSolution;
-            }
-
-            if(currentSolution.result > oldSolution.result){
-                oldSolution = currentSolution;
-            }else if(currentSolution.result > 0){
-                if(part >= deadline)
-                    continue;
-                double prob = pow(M_E, (currentSolution.result/(double)oldSolution.result)/divider) - 1;
-                if(prob*100 > (rand() % 100)){
-                    oldSolution = currentSolution;
+    bestSolution.prepare();
+    int counter = 0;
+    while(bestSolution.timeLeft > 0){
+        cout << ++counter << endl;
+        double best_value = -1;
+        int best_tree = -1;
+        for(int i = 1; i <= treeCount; i++){
+            int cost = calculate_distance(bestSolution.order[bestSolution.lastPosition], i)+trees[i].d;
+            if(!bestSolution.cutted[i] && bestSolution.timeLeft >= cost){
+                bestSolution.calculate_cut_values(i);
+                double predict_value = predict(bestSolution, i, 1, 0, 0);
+                if(predict_value > best_value){
+                    best_value = predict_value;
+                    best_tree = i;
                 }
             }
-        if(
-                (treeCount <= 100 && float( clock () - begin_time ) /  CLOCKS_PER_SEC > TIME1) ||
-                (treeCount <= 1000 && float( clock () - begin_time ) /  CLOCKS_PER_SEC > TIME2) ||
-                (treeCount <= 10000 && float( clock () - begin_time ) /  CLOCKS_PER_SEC > TIME3)
-                ){
-            bestSolution.printResult();
-            return 0;
+        }
+        if(best_value < 0)
+            break;
+        else{
+            bestSolution.lastPosition++;
+            bestSolution.order[bestSolution.lastPosition] = best_tree;
+            bestSolution.used[best_tree] = true;
+            bestSolution.direction[bestSolution.lastPosition] = (int)distance(cut_value[best_tree], max_element(cut_value[best_tree], cut_value[best_tree]+4));
+            bestSolution.calculateResult();
         }
     }
+    int temp_position = bestSolution.lastPosition+1;
+    for(int i = 1; i <= treeCount; i++){
+        if(!bestSolution.used[i]){
+            bestSolution.order[temp_position] = i;
+            bestSolution.direction[temp_position] = (int) distance(cut_value[i], max_element(cut_value[i], cut_value[i] + 4));
+            temp_position++;
+        }
+    }
+    bestSolution.calculateResult();
+    cout <<bestSolution.result<<endl;
+    for(int i = 0; i <= bestSolution.lastPosition; i++){
+        cout << bestSolution.order[i] <<" ";
+    }
+    //bestSolution.printResult();
+    return 0;
 }
