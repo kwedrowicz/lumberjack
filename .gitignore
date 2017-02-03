@@ -1,5 +1,5 @@
 bin
 cmake-build-debug
-/solutions/annealing_4.cpp
-/solutions/greedy_cpu_4.cpp
-/solutions/greedy_cpu_5.cpp
+/solutions/cpu/annealing_4.cpp
+/solutions/cpu/greedy_cpu_4.cpp
+/solutions/cpu/greedy_cpu_5.cpp

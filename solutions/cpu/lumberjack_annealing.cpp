@@ -4,9 +4,9 @@
 #include <cmath>
 #include <algorithm>
 #include <cstdlib>
-#include "../Forest.h"
-#include "../Tree.h"
-#include "../Solution.h"
+#include "../../Forest.h"
+#include "../../Tree.h"
+#include "../../Solution.h"
 
 #define MAXK 10000
 #define MAXN 1000
